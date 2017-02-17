@@ -1,8 +1,8 @@
 //Your code below
 function buildPath(p,n){
-  var path = [];
-  for(var i=0; i<n-1; i++){
-    var r = Math.random();
+  let path = [];
+  for(let i=0; i<n-1; i++){
+    let r = Math.random();
     if(r<=p){
       path.push(false);
     }
@@ -10,7 +10,7 @@ function buildPath(p,n){
       path.push(true);
     }
   }
-  path.push(true);
+  path[n-1]=(true);
   return path;
 }
 
@@ -46,7 +46,7 @@ let testpath1 = buildPath(0.10,15);
 let testpath2 = buildPath(0.50,15);
 console.log(testpath1);
 console.log(testpath2);
-console.log("---------------------");
+console.log("---------------------"
 console.log(stroll([true,false,true],0));
 console.log(stroll([true,true,true],0));
 console.log(rsj(testpath1,0));
